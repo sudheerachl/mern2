@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #DE3163;
+            margin: 0;
+            padding: 0;
+        }
+
+        .form-box {
+            background-color: #811331;
+            width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        label {
+            float: left;
+            width: 150px;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 60%;
+            margin: 8px 0;
+            padding: 12px 20px;
+            display: inline-block;
+            border: 0.5px thin solid;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #ffffff;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .center-text {
+            text-align: center;
+        }
+         .radio-container {
+            display: flex;
+            align-items: center;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="center-text">
+    <h1>Form CSS-7</h1>
+    <h5>CHERUKURI LAKSHMI SUDHEERA</h5>
+</div>
+
+<div class="form-box">
+    <form action="CSS-7.html" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter Email">
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter password">
+        <label for="phone_number">Phone number:</label>
+        <input type="tel" id="phone_number" placeholder="Enter Phone number"><br>
+        <div class="radio-container">
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male"> Male
+            <input type="radio" id="female" name="gender" value="female"> Female
+            <input type="radio" id="other" name="gender" value="other"> Other
+        </div>
+        <br>
+        <label for="language">Language:</label><br><br>
+        <select name="language" id="language">
+            <option value="lang">English</option>
+             <option value="lang">Tamil</option>
+             <option value="lang">Hindi</option>
+             <option value="lang">Telugu</option>
+        </select>
+        <label for="zip_code">Zip code:</label>
+        <input type="text" id="zip_code" placeholder="Enter Zip code">
+        <label for="about">About:</label>
+        <textarea id="about" placeholder="Write about yourself..."></textarea>
+        <button>Register</button>
+    </form>
+</div>
+</body>
+</html>

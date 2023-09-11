@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .login-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .login-title {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-label {
+            display: block;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-input::placeholder {
+            color: #aaa;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .form-checkbox {
+            margin-right: 5px;
+        }
+
+        .login-button {
+            display: block;
+            width: 100%;
+            background-color: #00cc00;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .cancel-button,
+        .forgot-button {
+            display: inline-block;
+            width: 45%;
+            background-color: #ff3333;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .forgot-button {
+            background-color: transparent;
+            color: #0000ff;
+            text-decoration: underline;
+        }
+
+        .button-container {
+            text-align: center;
+        }
+
+        .button-container .cancel-button {
+            margin-right: 10px;
+        }
+
+        .center-text {
+            text-align: center;
+        }
+
+        .header-image {
+            max-width: 40%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+  <h1 align="center" style="font-size: 18px;">CSS-6</h1>
+<h2 align="center" style="font-size: 18px;">CHERUKURI LAKSHMI SUDHEERA</h2>
+
+    <div class="login-container">
+        <div class="center-text">
+            <img class="header-image"
+                src="https://www.programs-project.eu/wp-content/uploads/2016/11/iconos-web-05.png"
+                alt="Page Header Image">
+        </div>
+        <form action="CSS-6.html" method="post">
+            <div class="form-group">
+                <label for="username" class="form-label">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter username" required class="form-input">
+            </div>
+            <div class="form-group">
+                <label for="password" class="form-label">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter password" required class="form-input">
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="remember" name="remember" class="form-checkbox">
+                <label for="remember">Remember me</label>
+            </div>
+            <div class="button-container">
+                <button type="submit" class="login-button">Login</button>
+                <div class="cancel-forgot-buttons">
+                    <button type="submit" class="cancel-button">Cancel</button>
+                    <a href="CSS-6.html" class="forgot-button">Forgot password?</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

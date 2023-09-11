@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Combined Navigation Bars</title>
+    <style>
+        .vertical-nav {
+            float: left;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 100px;
+            background-color: #96DED1;
+        }
+
+        .vertical-nav li a {
+            display: block;
+            color: blue;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        .vertical-nav li a.active,
+        .vertical-nav li a:hover:not(.active) {
+            background-color: #FFA500;
+            color: white;
+        }
+
+        .horizontal-nav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(241, 241, 241);
+        }
+
+        .horizontal-nav li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .horizontal-nav li a {
+            text-decoration: none;
+            color: #000;
+        }
+
+        .horizontal-nav li a:hover {
+            background-color: #696969;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1 align="center" style="font-size: 18px;">CSS-2</h1>
+    <h2 align="center" style="font-size: 18px;">CHERUKURI LAKSHMI SUDHEERA</h2>
+    <h3 align="center" style="font-size: 15px;">Combined Navigation Bars</h3>
+
+    <!-- Vertical Navigation Bar -->
+    <ul class="vertical-nav">
+        <li><a href="#home">Home</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Java" target="_blank">Java</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/CSS" target="_blank">CSS</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/HTML" target="_blank">HTML</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)" target="_blank">Bootstrap</a></li>
+    </ul>
+
+    <!-- Horizontal Navigation Bar -->
+    <ul class="horizontal-nav">|
+        <li><a href="https://en.wikipedia.org/wiki/Java" target="_blank">Java</a></li>|
+        <li><a href="https://en.wikipedia.org/wiki/HTML" target="_blank">HTML</a></li>|
+        <li><a href="https://en.wikipedia.org/wiki/CSS" target="_blank">CSS</a></li>|
+        <li><a href="https://en.wikipedia.org/wiki/Bootstrap_(front-end_framework)" target="_blank">Bootstrap</a></li>|
+    </ul>
+</body>
+</html>
